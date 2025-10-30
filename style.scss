@@ -358,9 +358,99 @@ main {
         }
 
     }
+  }
+
+  section.view7{
+    margin-top: 1rem;
+    @include flex-column(1rem);
+    
+    width: 100%;
     
 
-   
+    width: 100%;
+    .top{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        object-fit: conver;
+    }
+    .bottom{
+        
+        @include flex-column(4rem);
+        width: 100%;
+        
+        border-radius: 1rem;
+        padding: 2rem;
+        background-color: #242323;
+        color: white;
+        p{
+            opacity: 0.9;
+        }
+        h1{
+            font-size: 2.5rem;
+            line-height: 3rem;
+            font-weight: 400;
+        }
+        
+        .up{
+            
+            @include flex-column(1rem);
+        }
+        .down
+        {
+            align-items: center;
+            display: flex;
+            gap: 0.5rem;
+            i{
+                width: fit-content;
+                border-radius: 50%;
+                opacity: 0.7;
+                border: 1px solid white;
+                font-size: 2rem;
+            }
+        }
+
+    }
+  }
+
+  section.view8{
+    @include flex-column(1rem);
+    margin-top: 1rem;
+    padding: 2rem 2rem;
+    width: 100%;
+    background-color: #CEBD63;
+    border-radius: 1rem;
+    .text{
+        opacity: 0.8;
+    }
+    .text{
+        @include flex-column(1rem);
+        
+        h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 2.5rem;
+        }
+    }
+    .bot{
+        opacity: 0.95;
+        width: 100%;
+        height: 3rem;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.7rem;
+        p{
+            opacity: 0.9;
+        }
+
+    }
+
   }
 
 
@@ -456,15 +546,38 @@ main {
   }
 
     section.view6{
-    
-
        flex-direction: row;
+    }
 
+    section.view7{
+       flex-direction: row;
+      .top,.bottom{
         
+
+       width: 50%;
+       }
+       .bottom{
+          justify-content: space-between;
+          padding: 4rem 3rem;
+       }
 
     }
 
-
-}
+    section.view8{
+        flex-direction: row;
+        .text{
+            width: 80%;
+            h1{
+                opacity: 1;
+                font-size: 6rem;
+                font-weight: 400;
+                line-height: 6rem;
+            }
+        }
+        .bot{
+            width: 20%;
+        }
+    }
+ }
 
 }
